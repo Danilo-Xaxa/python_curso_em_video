@@ -1,0 +1,5 @@
+# a = input('Diga o nome de uma cidade: ')
+# print(bool('Santo' in a))
+a = str(input('Em que cidade você nasceu? ')).strip()
+print(a[:5].upper() == 'SANTO')
+#começando a usar o strip()

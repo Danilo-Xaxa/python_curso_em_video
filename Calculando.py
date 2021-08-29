@@ -1,0 +1,10 @@
+a = int(input('Aporte inicial: R$ '))
+b = int(input('Aporte mensal: R$ '))
+c = int(input('Taxa mensal (porcentagem): '))
+d = int(input('Tempo (meses): '))
+x = a + (b * d)
+z = (a*(1+(c/100))**d) + (b*((1+(c/100))**d - 1)/(c/100))
+y = z - x
+print(f'Total investido: R$ {x}')
+print(f'Dinheiro gerado pelo investimento: R$ {y:.2f}')
+print(f'Total bruto: R${z:.2f}')
